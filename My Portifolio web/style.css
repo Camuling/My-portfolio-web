@@ -84,7 +84,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: rgb(15, 15, 15);
 }
 .navbar .max-width{
     display: flex;
@@ -494,8 +494,9 @@ section .title::after{
 }
 
 .socials {
-    padding-bottom: 20px;
-    display: inline block;
+    padding-bottom: 30px;
+    display: inline;
+    height: 10px;
 }
 
 .social {
