@@ -1,39 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
+// Animate Skill Bars on Scroll
 
-    const navbar = document.querySelector(".navbar");
-    const menuBtn = document.querySelector(".menu-btn");
-    const menu = document.querySelector(".menu");
+const bars = document.querySelectorAll('.progress-bar');
 
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 20) {
-            navbar.style.background = "rgba(15,23,42,0.98)";
-        } else {
-            navbar.style.background = "rgba(15,23,42,0.9)";
-        }
-    });
+function showProgress() {
+  bars.forEach(bar => {
+    const value = bar.getAttribute('data-progress');
+    bar.style.width = value + "%";
+  });
+}
 
-    menuBtn.addEventListener("click", function () {
-        menu.classList.toggle("active");
-    });
-
-    document.querySelectorAll(".menu a").forEach(link => {
-        link.addEventListener("click", function () {
-            document.documentElement.style.scrollBehavior = "smooth";
-        });
-    });
-
-    if (document.querySelector(".typing")) {
-        new Typed(".typing", {
-            strings: [
-                "Junior Web Developer",
-                "Frontend Developer",
-                "Support-Focused Problem Solver"
-            ],
-            typeSpeed: 70,
-            backSpeed: 40,
-            backDelay: 1500,
-            loop: true
-        });
-    }
-
-});
+window.addEventListener('load', showProgress);
