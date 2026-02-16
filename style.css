@@ -170,6 +170,56 @@ section{
     font-size:14px;
 }
 
+/* SKILLS */
+.skills {
+    background: white;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.skill-card {
+    background: #0ea5e9;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* RESPONSIVE MENU */
+@media (max-width: 768px) {
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 250px;
+        background: #0f172a;
+        flex-direction: column;
+        padding-top: 80px;
+        transition: 0.4s ease;
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    .menu li {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+
 /* CONTACT */
 .contact{
     background:white;
@@ -183,3 +233,5 @@ footer{
     padding:20px;
     font-size:14px;
 }
+
+
