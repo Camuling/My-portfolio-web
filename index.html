@@ -2,132 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Daniel Aleixo | Junior Web Developer</title>
+    <title>Daniel Aleixo | Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<nav class="navbar">
-    <div class="max-width">
-        <div class="logo">DA</div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Daniel<span>Aleixo</span></div>
 
-        <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-        <div class="menu-btn">☰</div>
-    </div>
-</nav>
-
-<section class="home" id="home">
-    <div class="max-width">
-        <div class="home-content">
-            <div class="text-1">Hello, my name is</div>
-            <div class="text-2">Daniel Aleixo</div>
-            <div class="text-3">I'm a <span class="typing"></span></div>
-            <a href="#contact">Let's Work Together</a>
+            <div class="menu-btn">&#9776;</div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<section class="about" id="about">
-    <div class="max-width">
-        <h2 class="title">About Me</h2>
-        <p>
-            Junior Web Developer with experience in HTML, CSS and JavaScript.
-            I build responsive, user-focused web applications with clean structure and performance in mind.
-            With a background in customer support and sales, I bring strong communication,
-            troubleshooting skills, and a problem-solving mindset.
-        </p>
-    </div>
-</section>
-
-<!-- SKILLS SECTION -->
-<section class="skills" id="skills">
-    <div class="max-width">
-        <h2 class="title">Technical Skills</h2>
-
-        <div class="skills-grid">
-            <div class="skill-card">HTML5</div>
-            <div class="skill-card">CSS3</div>
-            <div class="skill-card">JavaScript</div>
-            <div class="skill-card">Git & GitHub</div>
-            <div class="skill-card">Responsive Design</div>
-            <div class="skill-card">Technical Support</div>
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div class="container">
+            <h3>Hello, I'm</h3>
+            <h1>Daniel Aleixo</h1>
+            <h2 class="typing">Junior Web Developer</h2>
+            <a href="#projects" class="btn">View My Work</a>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="projects" id="projects">
-    <div class="max-width">
-        <h2 class="title">Selected Projects</h2>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                I'm a passionate Junior Web Developer focused on building responsive websites and web applications.
+                I enjoy turning ideas into real digital products using HTML, CSS, and JavaScript.
+                I'm currently looking for remote opportunities where I can grow and contribute.
+            </p>
+        </div>
+    </section>
 
-        <div class="project-grid">
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
 
-            <div class="project-item">
-                <img src="project1.png" alt="Cocktail App">
-                <div class="project-overlay">
+            <div class="project-grid">
+
+                <div class="project-card">
                     <h3>Cocktail App</h3>
-                    <p>JavaScript-based application that fetches and displays cocktail data using an API.</p>
-                    <div class="project-links">
-                        <a href="#">Live Demo</a>
-                        <a href="#">GitHub</a>
-                    </div>
+                    <p>API-based web application that fetches and displays cocktail recipes dynamically.</p>
                 </div>
-            </div>
 
-            <div class="project-item">
-                <img src="project2.png" alt="Developer Portfolio">
-                <div class="project-overlay">
-                    <h3>Developer Portfolio</h3>
-                    <p>Responsive personal portfolio built using HTML, CSS and modern JavaScript.</p>
-                    <div class="project-links">
-                        <a href="#">Live Demo</a>
-                        <a href="#">GitHub</a>
-                    </div>
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>Personal responsive portfolio built to showcase skills and projects professionally.</p>
                 </div>
-            </div>
 
-            <div class="project-item">
-                <img src="project3.png" alt="Landing Page Project">
-                <div class="project-overlay">
+                <div class="project-card">
                     <h3>Landing Page Project</h3>
-                    <p>Modern landing page designed with layout structure and performance focus.</p>
-                    <div class="project-links">
-                        <a href="#">Live Demo</a>
-                        <a href="#">GitHub</a>
-                    </div>
+                    <p>Modern business landing page designed with responsive layout and clean UI.</p>
                 </div>
+
             </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="contact" id="contact">
-    <div class="max-width">
-        <h2 class="title">Contact</h2>
-        <p>Email: your@email.com</p>
-        <p>GitHub: github.com/yourusername</p>
-    </div>
-</section>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p>Email: your.email@email.com</p>
+        </div>
+    </section>
 
-<footer>
-    © 2026 Daniel Aleixo. All rights reserved.
-</footer>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Daniel Aleixo. All Rights Reserved.</p>
+    </footer>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
