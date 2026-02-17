@@ -1,27 +1,40 @@
-// Skill bar animation
-const bars = document.querySelectorAll(".progress-bar");
+// Wait until DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
 
-window.addEventListener("scroll", () => {
-  bars.forEach(bar => {
-    const position = bar.getBoundingClientRect().top;
-    const screenHeight = window.innerHeight;
-
-    if (position < screenHeight - 100) {
-      bar.style.width = bar.getAttribute("data-width");
-    }
-  });
-});
-
-// Scroll reveal animation
-window.addEventListener("scroll", function() {
+  const bars = document.querySelectorAll(".progress-bar");
   const reveals = document.querySelectorAll(".reveal");
 
-  reveals.forEach(function(reveal) {
-    const windowHeight = window.innerHeight;
-    const revealTop = reveal.getBoundingClientRect().top;
-
-    if (revealTop < windowHeight - 100) {
-      reveal.classList.add("active");
-    }
+  // Hide reveal elements initially (safe animation setup)
+  reveals.forEach(reveal => {
+    reveal.classList.add("hidden");
   });
+
+  function handleScroll() {
+
+    const windowHeight = window.innerHeight;
+
+    // Skill bar animation
+    bars.forEach(bar => {
+      const position = bar.getBoundingClientRect().top;
+
+      if (position < windowHeight - 100 && bar.style.width === "") {
+        bar.style.width = bar.getAttribute("data-width");
+      }
+    });
+
+    // Scroll reveal animation
+    reveals.forEach(reveal => {
+      const revealTop = reveal.getBoundingClientRect().top;
+
+      if (revealTop < windowHeight - 100) {
+        reveal.classList.remove("hidden");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Run once on load in case content is already visible
+  handleScroll();
+
 });
