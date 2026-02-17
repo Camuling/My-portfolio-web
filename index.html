@@ -4,37 +4,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daniel Aleixo | Junior Web Developer</title>
+
 <link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
 <header>
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="logo">
-      <img src="mylogo.png" alt="Daniel Logo">
+      <img src="logo.png" alt="Daniel Logo">
     </div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<section id="home" class="hero">
+<section id="home" class="hero section">
   <div class="hero-content">
     <img src="profile.jpg" alt="Daniel Profile" class="profile-pic">
     <h1>Daniel Aleixo</h1>
     <h2>Junior Web Developer</h2>
-    <p>I build clean, responsive websites and web applications using HTML, CSS and JavaScript. Passionate about creating practical and user-friendly solutions.</p>
+    <p>
+      I build clean, responsive websites and web applications using HTML, CSS and JavaScript.
+      Passionate about solving real-world problems with practical digital solutions.
+    </p>
   </div>
 </section>
 
-<section id="skills" class="skills">
-  <h2>My Skills</h2>
+<section id="skills" class="skills section">
+  <h2>Technical Skills</h2>
 
   <div class="skill">
     <span>HTML</span>
@@ -55,51 +63,69 @@
     <span>Git & GitHub</span>
     <div class="progress"><div class="progress-bar" data-progress="70"></div></div>
   </div>
-
 </section>
 
-<section id="projects" class="projects">
+<section id="experience" class="experience section">
+  <h2>Professional Experience</h2>
+
+  <div class="experience-card">
+    <h3>Customer Support & Sales Representative</h3>
+    <p>
+      Experienced in customer service, sales communication, and support assistance.
+      Strong ability to resolve issues, manage client expectations, and communicate clearly.
+    </p>
+
+    <ul>
+      <li>Handled customer inquiries and resolved issues efficiently</li>
+      <li>Provided product explanations and technical guidance</li>
+      <li>Maintained professional communication standards</li>
+      <li>Improved customer satisfaction through structured follow-ups</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects" class="projects section">
   <h2>Projects</h2>
 
   <div class="project-card">
     <img src="cocktail.jpg" alt="Cocktail App">
     <h3>Cocktail App</h3>
-    <p>A responsive cocktail search app using API integration to display drink recipes dynamically.</p>
+    <p>API-based cocktail search application with dynamic rendering.</p>
     <div class="buttons">
-      <a href="#" target="_blank">Live</a>
-      <a href="#" target="_blank">GitHub</a>
+      <a href="#">Live</a>
+      <a href="#">GitHub</a>
     </div>
   </div>
 
   <div class="project-card">
     <img src="portfolio.jpg" alt="Portfolio Website">
     <h3>Portfolio Website</h3>
-    <p>Modern responsive portfolio showcasing projects, skills and contact information.</p>
+    <p>Responsive portfolio showcasing development projects and skills.</p>
     <div class="buttons">
-      <a href="#" target="_blank">Live</a>
-      <a href="#" target="_blank">GitHub</a>
+      <a href="#">Live</a>
+      <a href="#">GitHub</a>
     </div>
   </div>
 
   <div class="project-card">
-    <img src="webapp.jpg" alt="Web Application">
+    <img src="webapp.jpg" alt="Web App">
     <h3>Web Application</h3>
-    <p>A functional web project demonstrating DOM manipulation and interactive UI design.</p>
+    <p>Interactive UI project demonstrating DOM manipulation.</p>
     <div class="buttons">
-      <a href="#" target="_blank">Live</a>
-      <a href="#" target="_blank">GitHub</a>
+      <a href="#">Live</a>
+      <a href="#">GitHub</a>
     </div>
   </div>
-
 </section>
 
-<section id="contact" class="contact">
-  <h2>Contact Me</h2>
+<section id="contact" class="contact section">
+  <h2>Contact</h2>
 
-  <p>Email: <a href="mailto:tyger-danny@outlook.com">tyger-danny@outlook.com</a></p>
-  <p>WhatsApp: <a href="https://wa.me/264858038412" target="_blank">+264 858038412</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/sacarima" target="_blank">linkedin.com/in/sacarima</a></p>
-
+  <div class="contact-icons">
+    <a href="mailto:tyger-danny@outlook.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://wa.me/264858038412" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://www.linkedin.com/in/sacarima" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
 </section>
 
 <footer>
