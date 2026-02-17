@@ -237,6 +237,11 @@ h2 {
   line-height: 1.6;
 }
 
+#proposal {
+  background: #f9f9f9;
+}
+
+
 .download-btn {
   display: inline-block;
   padding: 12px 25px;
