@@ -38,3 +38,17 @@ document.addEventListener("DOMContentLoaded", function () {
   handleScroll();
 
 });
+
+// Automatic Day/Night Mode
+function setThemeBasedOnTime() {
+  const hour = new Date().getHours();
+
+  // Dark mode from 6PM to 6AM
+  if (hour >= 18 || hour < 6) {
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
+  }
+}
+
+setThemeBasedOnTime();
