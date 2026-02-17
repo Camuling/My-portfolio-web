@@ -11,6 +11,7 @@ body {
   line-height: 1.6;
 }
 
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -36,6 +37,7 @@ body {
   font-weight: 500;
 }
 
+/* HERO */
 .hero {
   text-align: center;
   padding: 80px 20px;
@@ -47,10 +49,17 @@ body {
   margin-bottom: 20px;
 }
 
-.skills {
+/* SECTIONS */
+section {
   padding: 60px 8%;
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* SKILLS */
 .skill {
   margin-bottom: 20px;
 }
@@ -68,8 +77,21 @@ body {
   transition: width 1.5s ease;
 }
 
+/* EXPERIENCE */
+.experience-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.experience-card ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+/* PROJECTS */
 .projects {
-  padding: 60px 8%;
   display: grid;
   gap: 30px;
 }
@@ -100,13 +122,31 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 6px;
+  font-size: 14px;
 }
 
+/* CONTACT */
 .contact {
   text-align: center;
-  padding: 60px 20px;
 }
 
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 28px;
+}
+
+.contact-icons a {
+  color: #2c3e50;
+  transition: 0.3s;
+}
+
+.contact-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
