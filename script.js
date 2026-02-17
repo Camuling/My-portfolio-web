@@ -1,5 +1,4 @@
-// Animate Skill Bars on Scroll
-
+// Animate skill bars when page loads
 const bars = document.querySelectorAll('.progress-bar');
 
 function showProgress() {
