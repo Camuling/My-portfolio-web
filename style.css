@@ -359,3 +359,39 @@ footer {
     gap: 20px;
   }
 }
+
+* ===============================
+   DARK MODE
+================================= */
+
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .project-card,
+body.dark-mode .experience-card,
+body.dark-mode .proposal-card {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode a {
+  color: #4da6ff;
+}
+
+body.dark-mode .download-btn {
+  background: #4da6ff;
+}
+
+body.dark-mode .download-btn:hover {
+  background: #2d8cff;
+}
